@@ -42,6 +42,7 @@ public class Estagio_instruct {
         JSONArray jsonArray = new JSONArray(getText("https://jsonplaceholder.typicode.com/users"));
 
         System.out.println("Segue lista de websites dos cadastrados:\n");
+        
         for (int i = 0; i < jsonArray.length(); i++) {
 
             //Captação de objeto ({) de Array ([)
@@ -53,9 +54,10 @@ public class Estagio_instruct {
         }
 
         System.out.println("\n\nSegue e-mail da Samantha para consulta:\n");
+        
         for (int j = 0; j < jsonArray.length(); j++) {
 
-            //get the JSON Object 
+            //Captação de objeto ({) de Array ([) 
             JSONObject obj2 = jsonArray.getJSONObject(j);
             //Captando a string afim de comparar o texto com o desejado
             String username = obj2.getString("username");
@@ -71,14 +73,15 @@ public class Estagio_instruct {
         //Considerar todos os usuários que possuem latitude negativa como aqueles que moram no hemisfério sul
         System.out.println("\n\nPara fins informativos, de todos os registrados, o total daqueles"
                 + "que moram no Hemisfério Sul é igual a:");
+        
         for (int i = 0; i < jsonArray.length(); i++) {
 
             //Variável para checagem de caracteres
             int cont = 0;
 
             //Obtenção de ramificação dos objetos
-            JSONObject obj = jsonArray.getJSONObject(i);
-            JSONObject address = obj.getJSONObject("address");
+            JSONObject obj4 = jsonArray.getJSONObject(i);
+            JSONObject address = obj4.getJSONObject("address");
             JSONObject geo = address.getJSONObject("geo");
             //Captando a string do objeto afim de verificar a moradia rs
             String lat = geo.getString("lat");
