@@ -1,6 +1,6 @@
 # Estagio_Instruct
 
-Código proposto para resolver os seguintes problemas
+Código proposto para resolver os seguintes problemas:
 
 A URL https://jsonplaceholder.typicode.com/users retorna uma lista de
 usuários em JSON.
