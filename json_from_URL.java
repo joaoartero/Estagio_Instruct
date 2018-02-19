@@ -68,7 +68,7 @@ public class Estagio_instruct {
                 System.out.println(email);
             }
         }
-
+        //Considerar todos os usuários que possuem latitude negativa como aqueles que moram no hemisfério sul
         System.out.println("\n\nPara fins informativos, de todos os registrados, o total daqueles"
                 + "que moram no Hemisfério Sul é igual a:");
         for (int i = 0; i < jsonArray.length(); i++) {
